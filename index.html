@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varun Nagendran</title>
+<meta name="description" content="Varun Nagendran: MSc Business Analytics at Ivey. FP&amp;A, data engineering and analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="brand">varun nagendran<span>.</span></a>
+      <div class="nav-links">
+        <a href="#experience">experience</a>
+        <a href="#projects">projects</a>
+        <a href="#education">education</a>
+        <a href="#leadership">leadership</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Toronto, ON · Business analytics · FP&amp;A · Data engineering</p>
+      <h1 id="hero-title" class="hero-title">I build the data plumbing that finance teams run on.</h1>
+      <p class="lead">MSc Business Analytics candidate at Ivey, Class of 2026, with a BSc in Computer Science from Western. Most recently a Financial Analyst at The Butcher Shoppe, reporting to the CFO through an SAP rollout. Before that, data engineering at GE Vernova and application development at CIBC.</p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">See my work
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        </a>
+        <a href="resume.pdf" class="btn btn-outline">Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="exp-title">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 id="exp-title" class="section-title">Experience</h2>
+      </div>
+      <div class="jobs">
+        <article class="job">
+          <p class="job-date mono-label">May 2026 – Sept 2026</p>
+          <div class="job-body">
+            <h3 class="item-title">Financial Analyst <span>· The Butcher Shoppe</span></h3>
+            <p class="muted">FP&amp;A reporting to the CFO during the company's SAP rollout, turning manual pricing, receivables and rebate work into repeatable reporting.</p>
+            <div class="tags">
+              <span class="tag">SAP Master Data Preparation</span>
+              <span class="tag">Product Pricing &amp; Margin Comparison</span>
+              <span class="tag">AR Risk &amp; Credit Analysis</span>
+              <span class="tag">Customer Rebate &amp; Accrual Summary</span>
+            </div>
+          </div>
+        </article>
+        <article class="job">
+          <p class="job-date mono-label">May 2025 – Sept 2025</p>
+          <div class="job-body">
+            <h3 class="item-title">Data Engineer <span>· GE Vernova</span></h3>
+            <p class="muted">Replaced legacy systems so engineering and operations teams had reliable parts and inventory reporting.</p>
+            <div class="tags">
+              <span class="tag">Legacy Database Migration</span>
+              <span class="tag">Parts Reporting Dashboards</span>
+              <span class="tag">Brazil Site Production Reporting</span>
+            </div>
+          </div>
+        </article>
+        <article class="job">
+          <p class="job-date mono-label">May 2024 – Sept 2024</p>
+          <div class="job-body">
+            <h3 class="item-title">Product Engineer <span>· GE Vernova</span></h3>
+            <p class="muted">Simulation analysis for rotor design and digitizing decades of engineering records.</p>
+            <div class="tags">
+              <span class="tag">Simulation Runtime Analysis</span>
+              <span class="tag">Engineering Drawing Locator</span>
+            </div>
+          </div>
+        </article>
+        <article class="job">
+          <p class="job-date mono-label">May 2023 – Sept 2023</p>
+          <div class="job-body">
+            <h3 class="item-title">Application Developer <span>· CIBC</span></h3>
+            <p class="muted">Automation and data governance across 15+ data platforms.</p>
+            <div class="tags">
+              <span class="tag">Data Load Monitoring</span>
+              <span class="tag">Automated File Cleanup</span>
+              <span class="tag">Interface Documentation</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="proj-title">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 id="proj-title" class="section-title">Projects</h2>
+      </div>
+      <article class="project-card">
+        <div class="project-body">
+          <span class="project-status">Personal project · In progress</span>
+          <h3 class="project-title">Fantasy Football Start/Sit Model</h3>
+          <p class="muted">A full PPR start/sit model for QBs, RBs, WRs and TEs. A Python and DuckDB pipeline turns three seasons of nflverse data into a 12,900-row player-week feature table covering recent form, usage, consistency and matchup. Every week is scored only on data from earlier weeks, so the backtest stays honest.</p>
+          <p class="muted">Next up: combining the four scores into a 0–100 start score and backtesting it against Sleeper's weekly projections.</p>
+          <p class="project-stack">Python · SQL (DuckDB) · nflverse · Sleeper API</p>
+        </div>
+        <a href="https://github.com/varunnagendran" class="btn btn-outline">View on GitHub
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+        </a>
+      </article>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="edu-title">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 id="edu-title" class="section-title">Education</h2>
+      </div>
+      <div class="cards">
+        <div class="card is-accent">
+          <p class="mono-label">Class of 2026</p>
+          <h3 class="item-title">MSc Management, Business Analytics</h3>
+          <p class="muted">Ivey Business School, Western University</p>
+          <p class="card-note">Big Data Analytics · Global Financial Markets · Supply Chain Management · Simulation &amp; Risk Analysis</p>
+        </div>
+        <div class="card">
+          <p class="mono-label">Class of 2025</p>
+          <h3 class="item-title">BSc Computer Science</h3>
+          <p class="muted">Western University</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section" aria-labelledby="lead-title">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 id="lead-title" class="section-title">Leadership &amp; recognition</h2>
+      </div>
+      <div class="cards">
+        <div class="card is-accent">
+          <p class="mono-label">IDIC 2025 · Top 3 of 10 teams</p>
+          <h3 class="item-title">PwC &amp; Adobe Digital Innovation Conference</h3>
+          <p class="muted">Pitched PwC and Adobe judges on bringing Adobe's agentic AI into Lululemon's e-commerce platform, recreating the in-store experience for online shoppers.</p>
+        </div>
+        <div class="card">
+          <p class="mono-label">President</p>
+          <h3 class="item-title">Tamil Students' Association at Western</h3>
+          <p class="muted">Led a 100+ member student organization, running cultural events and launching a peer mentorship program.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="outside" class="section" aria-labelledby="out-title">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2 id="out-title" class="section-title">Outside work</h2>
+      </div>
+      <div class="chips">
+        <span class="chip">Fantasy sports</span>
+        <span class="chip">Weightlifting · 280 bench, 315 squat</span>
+        <span class="chip">Golf</span>
+        <span class="chip">Acting &amp; modeling</span>
+        <span class="chip">Video editing</span>
+        <span class="chip">Cinema</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2 id="contact-title" class="section-title">Get in touch</h2>
+      </div>
+      <p class="lead">Open to full-time roles in analytics, FP&amp;A and finance after graduating in December 2026. The fastest way to reach me is email.</p>
+      <div class="btn-row">
+        <a href="mailto:vnagendran.msc2026@ivey.ca" class="btn btn-primary">vnagendran.msc2026@ivey.ca</a>
+        <a href="https://www.linkedin.com/" class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/varunnagendran" class="btn btn-outline">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <span>© 2026 Varun Nagendran</span>
+      <span>[yourdomain].com</span>
+    </div>
+  </footer>
+
+</body>
+</html>
