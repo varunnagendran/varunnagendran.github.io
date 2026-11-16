@@ -90,6 +90,15 @@ section[id] { scroll-margin-top: 72px; }
 .nav-links a:hover {
   padding: 12px;
   color: var(--muted);
+  text-decoration: underline 2px transparent;
+  text-underline-offset: 6px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+/* Link for the section currently on screen (set by the script in index.html) */
+.nav-links a.is-active {
+  color: var(--text);
+  text-decoration-color: var(--accent);
 }
 
 /* ---------- Buttons ---------- */
