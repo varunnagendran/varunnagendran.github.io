@@ -18,9 +18,13 @@ A single-page personal site that scrolls, showing experience, projects, educatio
 - Writing style: direct, no em-dashes, no corporate filler.
 
 ## Open items
-- LinkedIn button points to https://www.linkedin.com/ as a placeholder. Varun will provide his profile URL.
 - Footer shows `[yourdomain].com` as a placeholder until the domain is bought.
-- Resume button needs a real PDF at `resume.pdf` in the repo root.
+
+## Links
+- LinkedIn: https://www.linkedin.com/in/varun-nagendran/
+- GitHub: https://github.com/varunnagendran
+- Email: vnagendran.msc2026@ivey.ca (mailto link)
+- Resume button opens `resume.pdf` in the repo root.
 
 ## Hosting
 - GitHub user: varunnagendran. Repo: `varunnagendran.github.io`, deployed from the `main` branch root.
