@@ -179,6 +179,20 @@ section[id] { scroll-margin-top: 72px; }
   color: var(--accent);
 }
 
+/* Underline is always there but transparent, so it can fade in */
+.nav-links a {
+  text-decoration: underline 2px transparent;
+  text-underline-offset: 7px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+/* Link for the section on screen (set by script.js): lime text, lime underline */
+.nav-links a.is-active,
+.nav-links a.is-active:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
 /* ---------- Buttons ---------- */
 .btn-row {
   display: flex;

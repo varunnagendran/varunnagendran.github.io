@@ -34,8 +34,11 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 **Interactions**
 - The ticker scrolls with CSS animation and stops for users who prefer reduced motion.
 - The Start/Sit buttons on the hero card swap the verdict line (`script.js`).
+- The nav link for the section on screen lights up in lime with a lime underline (`script.js`). Nothing is lit in the hero; Sign is lit at the bottom of the page. On phones the link row slides to keep the lit link in view.
 
-**Files:** `index.html` (markup), `styles.css` (all styling; colors and fonts are CSS variables in `:root`, phone layout under `@media (max-width: 640px)`), `script.js` (Start/Sit buttons). No inline styles except the meter bar widths on the start/sit card.
+**Files:** `index.html` (markup), `styles.css` (all styling; colors and fonts are CSS variables in `:root`, phone layout under `@media (max-width: 640px)`), `script.js` (Start/Sit buttons, nav highlight). No inline styles except the meter bar widths on the start/sit card.
+
+**Caching:** `index.html` links `styles.css?v=N` and `script.js?v=N`. Bump N whenever either file changes so browsers fetch the new version.
 
 ## Content rules
 - Content comes from Varun's resumes. Don't invent stats, titles or dates. The "98" start score is the one deliberate joke number.
