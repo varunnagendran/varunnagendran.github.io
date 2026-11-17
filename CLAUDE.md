@@ -44,10 +44,14 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 - Writing style: direct, no em-dashes, no corporate filler.
 
 ## Open items
-- LinkedIn button points to https://www.linkedin.com/ as a placeholder. Varun will provide his profile URL.
 - The GitHub link on the project card should point to the ff-start-sit repo once it's confirmed.
 - Footer shows `[yourdomain].com` as a placeholder until the domain is bought.
 - The "Full report (PDF)" button expects `resume.pdf` in the repo root.
+
+## Links
+- LinkedIn: https://www.linkedin.com/in/varun-nagendran/
+- GitHub: https://github.com/varunnagendran
+- Email: vnagendran.msc2026@ivey.ca (mailto link)
 
 ## Hosting
 - GitHub user: varunnagendran. Repo: `varunnagendran.github.io`, deployed from the `main` branch root.
