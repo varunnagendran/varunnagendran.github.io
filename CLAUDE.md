@@ -47,13 +47,13 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 - Writing style: direct, no em-dashes, no corporate filler.
 
 ## Open items
-- The GitHub link on the project card should point to the ff-start-sit repo once it's confirmed.
 - Footer shows `varunnagendran.github.io` until the custom domain is bought. Swap it then.
 - The "Resume" button in the hero expects `resume.pdf` in the repo root.
 
 ## Links
 - LinkedIn: https://www.linkedin.com/in/varun-nagendran/
 - GitHub: https://github.com/varunnagendran
+- Project repo (Game film card): https://github.com/varunnagendran/ff-start-sit
 - Email: vnagendran.msc2026@ivey.ca (mailto link)
 
 ## Hosting
