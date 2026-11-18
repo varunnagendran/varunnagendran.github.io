@@ -48,7 +48,7 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 
 ## Open items
 - The GitHub link on the project card should point to the ff-start-sit repo once it's confirmed.
-- Footer shows `[yourdomain].com` as a placeholder until the domain is bought.
+- Footer shows `varunnagendran.github.io` until the custom domain is bought. Swap it then.
 - The "Resume" button in the hero expects `resume.pdf` in the repo root.
 
 ## Links
