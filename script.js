@@ -1,3 +1,31 @@
+// Start at the top on reload instead of where you last were.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+// Someone opened a shared link like .../#sign: jump straight to that section.
+if (location.hash) {
+  var linked = document.getElementById(location.hash.slice(1));
+  if (linked) {
+    window.addEventListener('load', function () {
+      linked.scrollIntoView({ behavior: 'instant' });
+    });
+  }
+}
+
+// In-page links (nav, "Watch the film", etc.) scroll smoothly without
+// adding #section to the address, so a reload starts at the top.
+// A shared link like .../#sign still opens at that section.
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    var id = link.getAttribute('href').slice(1);
+    var target = id === 'top' ? null : document.getElementById(id);
+    if (id !== 'top' && !target) return;
+    e.preventDefault();
+    if (target) target.scrollIntoView();
+    else window.scrollTo(0, 0);
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  });
+});
+
 // Start/Sit buttons on the hero card: highlight the chosen call
 // and show the matching verdict line.
 document.querySelectorAll('.call-btn').forEach(function (btn) {
