@@ -38,7 +38,7 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 
 **Files:** `index.html` (markup), `styles.css` (all styling; colors and fonts are CSS variables in `:root`, phone layout under `@media (max-width: 640px)`), `script.js` (Start/Sit buttons, nav highlight). No inline styles except the meter bar widths on the start/sit card.
 
-**Caching:** `index.html` links `styles.css?v=N` and `script.js?v=N`. Bump N whenever either file changes so browsers fetch the new version.
+**Caching:** `index.html` links `styles.css?v=N`, `script.js?v=N` and `resume.pdf?v=N`. Bump N whenever that file changes so browsers fetch the new version.
 
 ## Content rules
 - Content comes from Varun's resumes. Don't invent stats, titles or dates. The "98" start score is the one deliberate joke number.
