@@ -1,7 +1,7 @@
 # Varun Nagendran personal website
 
 ## What this is
-A single-page personal site that scrolls, themed as a fantasy football **Scouting Report**. It's hosted on GitHub Pages and will get a custom domain later (not bought yet).
+A single-page personal site that scrolls, themed as a fantasy football **Scouting Report**. It's hosted on GitHub Pages at https://varunnagendran.com.
 
 ## Approved design (index.html is the source of truth)
 `index.html` is the design Varun approved, exported from a mockup. Keep the look exactly as it is unless he asks for a change.
@@ -47,7 +47,6 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 - Writing style: direct, no em-dashes, no corporate filler.
 
 ## Open items
-- Footer shows `varunnagendran.github.io` until the custom domain is bought. Swap it then.
 - The "Resume" button in the hero expects `resume.pdf` in the repo root.
 
 ## Links
@@ -58,6 +57,7 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 
 ## Hosting
 - GitHub user: varunnagendran. Repo: `varunnagendran.github.io`, deployed from the `main` branch root.
+- Custom domain: varunnagendran.com, registered and DNS on Cloudflare (4 GitHub A records on @, www CNAME to varunnagendran.github.io, all DNS only). The `CNAME` file in the repo root holds the domain; keep it.
 - Keep it static: plain HTML/CSS/JS, no build step, no framework.
 
 ## Working style
