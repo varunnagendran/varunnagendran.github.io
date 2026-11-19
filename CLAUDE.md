@@ -22,7 +22,7 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 **Section order**
 1. Scrolling stats ticker
 2. Sticky nav (Career stats, Game film, Combine, Highlights, Locker room, Sign)
-3. Hero: prospect intro, plus a start/sit card with a playful "98 START" score
+3. Hero: prospect intro, plus a field goal mini-game card
 4. 01 Career stats (experience)
 5. 02 Game film (projects)
 6. 03 The combine (education)
@@ -33,15 +33,15 @@ A single-page personal site that scrolls, themed as a fantasy football **Scoutin
 
 **Interactions**
 - The ticker scrolls with CSS animation and stops for users who prefer reduced motion.
-- The Start/Sit buttons on the hero card swap the verdict line (`script.js`).
+- Field goal game on the hero card (`kicker.js`, a canvas): pull back anywhere on the field and let go to kick. A make adds to Made and Streak and brings new uprights at a random spot and distance (longer as the streak grows); a miss resets Streak and re-kicks the same uprights. Best streak is saved in the visitor's browser. Reset clears Made and Streak. Keyboard: arrows aim and set power, space kicks. Canvas colors are read from the CSS variables.
 - The nav link for the section on screen lights up in lime with a lime underline (`script.js`). Nothing is lit in the hero; Sign is lit at the bottom of the page. On phones the link row slides to keep the lit link in view.
 
-**Files:** `index.html` (markup), `styles.css` (all styling; colors and fonts are CSS variables in `:root`, phone layout under `@media (max-width: 640px)`), `script.js` (Start/Sit buttons, nav highlight). No inline styles except the meter bar widths on the start/sit card.
+**Files:** `index.html` (markup), `styles.css` (all styling; colors and fonts are CSS variables in `:root`, phone layout under `@media (max-width: 640px)`), `script.js` (in-page links, nav highlight), `kicker.js` (field goal game). No inline styles.
 
-**Caching:** `index.html` links `styles.css?v=N`, `script.js?v=N` and `resume.pdf?v=N`. Bump N whenever that file changes so browsers fetch the new version.
+**Caching:** `index.html` links `styles.css?v=N`, `script.js?v=N`, `kicker.js?v=N` and `resume.pdf?v=N`. Bump N whenever that file changes so browsers fetch the new version.
 
 ## Content rules
-- Content comes from Varun's resumes. Don't invent stats, titles or dates. The "98" start score is the one deliberate joke number.
+- Content comes from Varun's resumes. Don't invent stats, titles or dates.
 - Experience entries are "seasons": year, title · company, one short line, a "Plays" line of project names, and 2–3 stat boxes. No long bullet lists.
 - Game film holds personal projects only (no work projects). Right now that's just the Fantasy Football Start/Sit Model, marked "In progress". Keep its description in sync with what's actually built in the ff-start-sit repo.
 - Writing style: direct, no em-dashes, no corporate filler.

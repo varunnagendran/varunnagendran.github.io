@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -68,47 +68,22 @@
           </div>
         </div>
 
-        <div class="score-card">
+        <div class="score-card kick-card">
           <div class="score-panel">
             <div class="score-head label">
-              <span>Start / sit model</span><span>Week 2027.1</span>
+              <span>Field goal unit</span><span data-kick-distance>30 yd</span>
             </div>
-            <div class="score-row">
-              <div>
-                <span class="label">Start score</span>
-                <span class="score-num display-num">98</span>
-              </div>
-              <span class="score-badge">START</span>
+            <div class="kick-field">
+              <canvas class="kick-canvas" tabindex="0" role="img"
+                aria-label="Field goal mini-game. Drag back from anywhere on the field and let go to kick. With the keyboard: arrow keys aim and set power, space kicks."></canvas>
             </div>
-            <div class="meters">
-              <div class="meter">
-                <div class="meter-top"><span>Recent form</span><span>Financial Analyst, 2026</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 96%"></div></div>
-              </div>
-              <div class="meter">
-                <div class="meter-top"><span>Usage</span><span>Reported to the CFO</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 92%"></div></div>
-              </div>
-              <div class="meter">
-                <div class="meter-top"><span>Consistency</span><span>4 straight summers</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 100%"></div></div>
-              </div>
-              <div class="meter">
-                <div class="meter-top"><span>Matchup</span><span>Analytics, FP&amp;A, data</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 94%"></div></div>
-              </div>
+            <div class="kick-stats" aria-live="polite">
+              <div class="kick-stat"><span class="label">Made</span><span class="kick-num display-num" data-kick-made>0</span></div>
+              <div class="kick-stat"><span class="label">Streak</span><span class="kick-num display-num" data-kick-streak>0</span></div>
+              <div class="kick-stat"><span class="label">Best</span><span class="kick-num display-num" data-kick-best>0</span></div>
             </div>
-            <div class="call-area">
-              <div class="call-group" role="group" aria-label="Your call">
-                <button type="button" class="call-btn is-on" data-call="start" aria-pressed="true">Start</button>
-                <button type="button" class="call-btn" data-call="sit" aria-pressed="false">Sit</button>
-              </div>
-              <div class="verdict" data-verdict="start">
-                <p>Smart call. Locked in as an every-week starter. <a href="#sign" class="text-link">Sign him</a></p>
-              </div>
-              <div class="verdict" data-verdict="sit" hidden>
-                <p>Bold. The model disagrees. <a href="#stats" class="text-link">Check the career stats</a> before you lock that in.</p>
-              </div>
+            <div class="kick-foot">
+              <button type="button" class="kick-btn" data-kick-reset>Reset</button>
             </div>
           </div>
         </div>
@@ -332,6 +307,7 @@
     </div>
   </footer>
 
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
+<script src="kicker.js?v=1"></script>
 </body>
 </html>
